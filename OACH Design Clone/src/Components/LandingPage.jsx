@@ -1,14 +1,16 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { FaArrowDown } from "react-icons/fa6";
 
 const LandingPage = () => {
   return (
-    <div className="w-full h-screen bg-black pt-1">
+    <div data-scroll data-scroll-section data-scroll-speed=".6" className="w-full h-screen bg-black pt-1">
       <div className="makers mt-36 px-12 ">
         <div className=" leading-[5.8vw]  ">
           {["We Create", "Eye Opening", "Presentations"].map((elem, index) => (
             <div key={elem} className="flex">
-              {index === 1 && <div className="w-28 rounded-md h-16 bg-red-400 mt-[1vw] "></div>}
+              {index === 1 && <motion.div  initial={{width:0}} animate={{width:"7vw"}}
+              transition={{ease:[0.76,0,0.24,1], duration:1}} className="w-28 rounded-md h-16 bg-red-400 mt-[1vw] "></motion.div>}
               <h1
                 key={elem}
                 className="flex text-[6.5vw] tracking-[-.4vw]  uppercase font-bold"
