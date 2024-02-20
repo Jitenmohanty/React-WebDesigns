@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar'
 import Eye from './Components/Eye'
 import Featured from './Components/Featured'
 import Reviews from './Components/Reviews'
+import SecondEye from './Components/SecondEye'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Eye/>
         <Featured/>
         <Reviews/>
+        <SecondEye/>
     </div>
   )
 }
