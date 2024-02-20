@@ -44,16 +44,16 @@ const SecondEye = () => {
             <FaArrowDown />
           </h1>
         </div>
-        <div className=" flex justify-center items-center absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] h-1/2 w-1/2 gap-8">
-          <div className="h-[13vw] w-[13vw] rounded-full bg-white flex justify-center items-center">
-            <div className="relative  h-[10vw] w-[10vw] bg-black rounded-full">
+        <div className=" flex justify-center items-center absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-80%] h-1/2 w-1/2 gap-8">
+          <div className="h-[11vw] w-[11vw] rounded-full bg-white flex justify-center items-center">
+            <div className="relative  h-[7vw] w-[7vw] bg-black rounded-full">
               <div style={{transform:`translate(-50%,-50%) rotate(${rotate}deg)`}}  className="role absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] w-full h-3">
                 <div className="small  h-[1vw] w-[1vw] bg-white rounded-full"></div>
               </div>
             </div>
           </div>
-          <div className="h-[13vw] w-[13vw] rounded-full bg-white flex justify-center items-center">
-          <div className="relative  h-[10vw] w-[10vw] bg-black rounded-full">
+          <div className="h-[11vw] w-[11vw] rounded-full bg-white flex justify-center items-center">
+          <div className="relative  h-[7vw] w-[7vw] bg-black rounded-full">
               <div style={{transform:`translate(-50%,-50%) rotate(${rotate}deg)`}}  className="role absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] w-full h-3">
                 <div className="small  h-[1vw] w-[1vw] bg-white rounded-full"></div>
               </div>
