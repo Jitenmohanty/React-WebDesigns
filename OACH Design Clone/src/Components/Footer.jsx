@@ -1,4 +1,6 @@
 import React from "react";
+import '../App.css'
+
 
 const Footer = () => {
   return (
@@ -13,13 +15,11 @@ const Footer = () => {
             Presentations
           </h1>
           <div className="inner flex flex-col w-full">
-            <div className="bottom mt-16 ml-2">
-              {["S:", "Instagram", "Behance", "Facebook", "Linkedin"].map(
+            <div className="bottom mt-16 ml-2 flex flex-col  ">
+              {[ "Instagram", "Behance", "Facebook", "Linkedin"].map(
                 (item, index) => (
                   <h1
-                    className={`${
-                      index === 0 && "mb-4 no-underline"
-                    } underline`}
+                  className="link"
                     key={item}
                   >
                     {item}
@@ -28,26 +28,24 @@ const Footer = () => {
               )}
             </div>
             <div className="right flex justify-between">
-              <div className="bottom mt-10 ml-2">
+              <div className="bottom mt-10 flex flex-col ml-2  ">
                 {[
-                  "L:",
                   "202-1965 W 4th Ave",
                   "Vancouver, Canada",
                   "30 Chukarina St",
                   "Lviv, Ukraine",
                 ].map((item, index) => (
                   <h1
-                    className={`${index === 0 && "mb-4 no-underline"}
-                      ${index === 2 && "mb-4"} underline`}
+                    className={`link
+                      ${index === 2 && "mb-4"} `}
                     key={item}
                   >
                     {item}
                   </h1>
                 ))}
               </div>
-              <div className="bottom mt-10 ml-2">
+              <div className="bottom mt-10 ml-2 flex flex-col  ">
                 {[
-                  "M:",
                   "Home",
                   "Services",
                   "Our work",
@@ -56,9 +54,7 @@ const Footer = () => {
                   "Contact us",
                 ].map((item, index) => (
                   <h1
-                    className={`${
-                      index === 0 && "mb-4 no-underline"
-                    } underline`}
+                    className="link "
                     key={item}
                   >
                     {item}
@@ -66,10 +62,10 @@ const Footer = () => {
                 ))}
               </div>
             </div>
-            <div className="bottom mt-0 ml-2">
-              {["E:", "jitenmohantyaz@gmail.com"].map((item, index) => (
+            <div className="bottom mt-0 ml-2 flex flex-col  ">
+              {[ "jitenmohantyaz@gmail.com"].map((item, index) => (
                 <h1
-                  className={`${index === 0 && "mb-4 no-underline"} underline`}
+                className="link"
                   key={item}
                 >
                   {item}
@@ -81,8 +77,8 @@ const Footer = () => {
       </div>
       <div className="bottom flex justify-between items-center mt-8 ">
         <h1 className="text-[3vw]">ochi</h1>
-        <h2 className="text-gray-400">© ochi design 2024. Legal Terms</h2>
-        <h2 className="text-gray-400">
+        <h2 className="text-gray-400">© ochi design<h2 className="link"> 2024. Legal Terms</h2></h2>
+        <h2 className="text-gray-400 link">
           Website by{" "}
           <a href="https://portfolio-react-me.vercel.app/" target="_blank">
             @Jitu

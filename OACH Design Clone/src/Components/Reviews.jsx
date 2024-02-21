@@ -4,21 +4,19 @@ import Data from "../assets/reviewData.json";
 const Reviews = () => {
   const [visible, setVisisble] = useState(false);
   const [indexs, setIndex] = useState(0);
-  const [open, setOpen] = useState(false);
 
   const handleClick = (index) => {
-    if (open) {
+    if (visible && indexs !== index) {
       setVisisble((prev) => !prev);
-      setOpen(false);
     }
     setVisisble((prev) => !prev);
-    setOpen(true);
     setIndex(index);
+    
   };
 
   // console.log(Data)
   return (
-    <div className="featured w-full pb-28 min-h-screen bg-black">
+    <div  className="featured w-full pb-28 min-h-screen bg-black">
       <div className="header px-12 py-8 border-b-[1px] border-zinc-400">
         <h1 className="text-5xl">Client's reviews</h1>
       </div>
@@ -89,7 +87,8 @@ const Reviews = () => {
           </div>
         ))}
       </div>
-        <div className="cards px-10 py-20 flex gap-5">
+
+        <div   className="cards px-10 py-20 flex gap-5">
             <div className="w-1/2 bg-[#004D43] h-96 rounded-lg flex justify-center items-center relative">
                   <h1 className="text-7xl text-[#CDEA68]">ochi</h1>
                   <div className="absolute left-10 bottom-6 border-[#CDEA68] border-2 px-3 text-[#CDEA68] py-1 text-sm rounded-full">&copy;2022-2024</div>
