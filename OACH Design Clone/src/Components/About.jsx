@@ -3,7 +3,7 @@ import { FaArrowDown } from "react-icons/fa6";
 
 const About = () => {
   return (
-    <div data-scroll data-scroll-section data-scroll-speed=".1" className="min-h-screen w-full bg-[#CDEA68] text-black  rounded-tl-3xl rounded-tr-3xl">
+    <div data-scroll data-scroll-section className="min-h-screen w-full bg-[#CDEA68] text-black  rounded-tl-3xl rounded-tr-3xl">
       <div className="htag  border-b-[0.5px] border-zinc-500 px-12 py-20">
         <h1 className="text-[3.5vw] leading-[4vw] w-[85%]">
           Ochi is a strategic partner for fast-grow­ing tech businesses that

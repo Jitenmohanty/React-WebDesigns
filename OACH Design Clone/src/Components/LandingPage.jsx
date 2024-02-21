@@ -4,7 +4,7 @@ import { FaArrowDown } from "react-icons/fa6";
 
 const LandingPage = () => {
   return (
-    <div data-scroll data-scroll-section data-scroll-speed=".6" className="w-full h-screen bg-black pt-1">
+    <div data-scroll data-scroll-section data-scroll-speed="-.6" className="w-full h-screen bg-black pt-1">
       <div className="makers mt-36 px-12 ">
         <div className=" leading-[5.8vw]  ">
           {["We Create", "Eye Opening", "Presentations"].map((elem, index) => (

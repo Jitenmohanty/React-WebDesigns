@@ -8,11 +8,12 @@ import Featured from './Components/Featured'
 import Reviews from './Components/Reviews'
 import SecondEye from './Components/SecondEye'
 import Footer from './Components/Footer'
-import LocomotiveScroll from 'locomotive-scroll'
+import LocomotiveScroll from 'locomotive-scroll';
 
 function App() {
 
-const scroll = new LocomotiveScroll();
+
+  const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <div className='min-h-full w-full bg-black text-white'>

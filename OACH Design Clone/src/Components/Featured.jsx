@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import { motion, useAnimation } from "framer-motion";
 import { FaArrowDown } from "react-icons/fa6";
 
 const Featured = () => {
+  const cards = [useAnimation(), useAnimation()];
+
+  const hoverStart = (index) => {
+    cards[index].start({ y: "0" },);
+  };
+  const hoverEnd = (index) => {
+    cards[index].start({ y: "100%" });
+  };
+
   return (
     <div className="featured w-full pb-28 min-h-screen bg-black">
       <div className="header px-12 py-8 border-b-[1px] border-zinc-400">
@@ -19,9 +29,23 @@ const Featured = () => {
           </div>
         </div>
         <div className="container flex gap-10 w-full ">
-          <div className="inner w-1/2 rounded-lg relative">
-            <h1 className="absolute left-full -translate-x-1/2 top-1/3 text-7xl font-bold uppercase">
-              Visa
+          <motion.div
+            onHoverStart={() => hoverStart(0)}
+            onHoverEnd={() => hoverEnd(0)}
+            className="inner w-1/2 rounded-lg relative"
+          >
+            <h1 className="absolute overflow-hidden z-10 left-full -translate-x-1/2 top-[30%] text-8xl font-bold flex text-[#CDEA68]">
+              {"FYDE".split("").map((item, index) => (
+                <motion.span
+                  initial={{ y: "100%" }}
+                  animate={cards[0]}
+                  transition={{ ease: [0.22, 1, 0.36, 1], delay: index * 0.09 }}
+                  className="inline-block"
+                  key={index}
+                >
+                  {item}
+                </motion.span>
+              ))}
             </h1>
             <div className="img bg-cover  rounded-lg overflow-hidden">
               <img
@@ -43,10 +67,24 @@ const Featured = () => {
                 }
               )}
             </div>
-          </div>
-          <div className="inner w-1/2 h-[65vh] rounded-lg relative  ">
-            <h1 className="absolute right-full translate-x-1/2 top-1/2 text-7xl z-10 font-bold uppercase">
-              Risa
+          </motion.div>
+          <motion.div
+            onHoverStart={() => hoverStart(1)}
+            onHoverEnd={() => hoverEnd(1)}
+            className="inner w-1/2  rounded-lg relative  "
+          >
+            <h1 className="absolute overflow-hidden  z-10 left-0 -translate-x-1/2 top-[30%] text-8xl font-bold flex text-[#CDEA68]">
+              {"VISE".split("").map((item, index) => (
+                <motion.span
+                  initial={{ y: "100%" }}
+                  animate={cards[1]}
+                  transition={{ ease: [0.22, 1, 0.36, 1], delay: index * 0.09 }}
+                  className="inline-block"
+                  key={index}
+                >
+                  {item}
+                </motion.span>
+              ))}
             </h1>
             <div className="img rounded-lg overflow-hidden">
               <img
@@ -55,30 +93,29 @@ const Featured = () => {
               />
             </div>
             <div className="capsule w-full flex gap-10  text-white mt-6">
-              {["agebcy", "company Presentation"].map(
-                (item, index) => {
-                  return (
-                    <h3
-                      key={item}
-                      className="rounded-3xl uppercase border-[1px] py-1 text-gray-400 border-gray-400  text-sm  px-4 "
-                    >
-                      {item}
-                    </h3>
-                  );
-                }
-              )}
+              {["agebcy", "company Presentation"].map((item, index) => {
+                return (
+                  <h3
+                    key={item}
+                    className="rounded-3xl uppercase border-[1px] py-1 text-gray-400 border-gray-400  text-sm  px-4 "
+                  >
+                    {item}
+                  </h3>
+                );
+              })}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="btn w-full mt-20  bg-black rounded-full font-bold text-black flex justify-center items-center">
-            <div className="inner border-2 flex justify-center items-center px-5 py-3 rounded-full gap-8 uppercase bg-white">
-            <h1 className="">
-             view all case studies 
-            </h1>
-           <h1 className="rotate-[-140deg]"> <FaArrowDown/></h1>
-            </div>
-          </div>
+        <div className="inner border-2 flex justify-center items-center px-5 py-3 rounded-full gap-8 uppercase bg-white">
+          <h1 className="">view all case studies</h1>
+          <h1 className="rotate-[-140deg]">
+            {" "}
+            <FaArrowDown />
+          </h1>
+        </div>
+      </div>
     </div>
   );
 };
