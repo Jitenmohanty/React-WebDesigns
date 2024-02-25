@@ -4,16 +4,16 @@ import { FaArrowDown } from "react-icons/fa6";
 const About = () => {
   return (
     <div data-scroll data-scroll-section data-scroll-speed=".002" className="min-h-screen w-full bg-[#CDEA68] text-black  rounded-tl-3xl rounded-tr-3xl">
-      <div className="htag  border-b-[0.5px] border-zinc-500 px-12 py-20">
-        <h1 className="text-[3.5vw] leading-[4vw] w-[85%]">
+      <div className="htag  border-b-[0.5px] border-zinc-500 px-5 py-10  lg:px-12 lg:py-20">
+        <h1 className="text-4xl lg:text-[3.5vw] leading-[10vw] lg:leading-[4vw] w-[85%]">
           Ochi is a strategic partner for fast-grow­ing tech businesses that
           need to raise funds, sell prod­ucts, ex­plain com­plex ideas, and{" "}
           <u>hire great peo­ple</u>.
         </h1>
       </div>
-      <div className="middle px-12 py-6 flex justify-around border-b-[0.5px] border-zinc-500 pb-16">
-        <h1 className="w-[30%]">What you can expect:</h1>
-        <div className="middleMid flex w-[22%] gap-10 flex-col justify-start text-base">
+      <div className="middle px-12 py-6 flex lg:flex-row flex-col w-full justify-around border-b-[0.5px] border-zinc-500 pb-16 gap-4 text-2xl">
+        <h1 className="lg:w-[30%] w-full">What you can expect:</h1>
+        <div className="middleMid flex lg:w-[22%] w-full gap-4 lg:gap-10 flex-col justify-start lg:text-base">
           <h1 className="">
             We create tailored presentations to help you persuade your
             colleagues, clients, or investors. Whether it’s live or digital,
@@ -24,7 +24,7 @@ const About = () => {
             what makes your message clear, convincing, and captivating.
           </h1>
         </div>
-        <div className="bottom mt-24">
+        <div className="bottom lg:mt-24 mt-6 text-2xl">
           {["S:", "Instagram", "Behance", "Facebook", "Linkedin"].map(
             (item, index) => (
               <h1
@@ -37,10 +37,10 @@ const About = () => {
           )}
         </div>
       </div>
-      <div className="bottom px-12 py-6 flex justify-between  pb-16">
+      <div className="bottom px-12 py-6 flex flex-col gap-6 lg:flex-row justify-between  pb-16">
         <div className="left">
-          <h1 className="text-[4vw] tracking-[-0.2vw]">Our approach:</h1>
-          <div className="btn pl-4 py-4 pr-1 bg-black rounded-full text-white flex justify-around w-44 items-center">
+          <h1 className="lg:text-[4vw] text-3xl tracking-[-0.2vw]">Our approach:</h1>
+          <div className="btn pl-4 py-4 pr-1 mt-3 bg-black rounded-full text-white flex justify-around w-44 items-center">
             <h1 className="">
               READ MORE
             </h1>

@@ -88,17 +88,17 @@ const Reviews = () => {
         ))}
       </div>
 
-        <div   className="cards px-10 py-20 flex gap-5">
-            <div className="w-1/2 bg-[#004D43] h-96 rounded-lg flex justify-center items-center relative">
+        <div   className="cards px-10 py-20 flex lg:flex-row flex-col gap-5">
+            <div className="lg:w-1/2 w-full  bg-[#004D43] h-96 rounded-lg flex justify-center items-center relative">
                   <h1 className="text-7xl text-[#CDEA68]">ochi</h1>
                   <div className="absolute left-10 bottom-6 border-[#CDEA68] border-2 px-3 text-[#CDEA68] py-1 text-sm rounded-full">&copy;2022-2024</div>
             </div>
-            <div className="w-1/2  h-96 flex gap-4  rounded-lg">
-                  <div className="w-1/2 h-96 bg-[#51838e] rounded-lg flex justify-center items-center  relative">
+            <div className="lg:w-1/2 w-full  h-96 lg:flex-row flex-col flex gap-4  rounded-lg">
+                  <div className="lg:w-1/2 w-full lg:h-96 h-[200%] bg-[#51838e] rounded-lg flex justify-center items-center  relative">
                     <img src="https://ochi.design/wp-content/uploads/2022/04/logo002.svg" alt="" />
                      <div className="absolute left-10 bottom-6 border-[#CDEA68] border-2 px-3 text-[#CDEA68] py-1 text-sm rounded-full">&copy;2022-2024</div>
                   </div>
-                  <div className="w-1/2 h-96 bg-[#51838e] rounded-lg flex justify-center items-center relative">
+                  <div className="lg:w-1/2 w-full lg:h-96 h-[200%] bg-[#51838e] rounded-lg flex justify-center items-center relative">
                     <img className="bg-none mix-blend-screen rounded-full h-20 w-20"  src="https://ochi.design/wp-content/uploads/2022/04/logo003.png" alt=""/>
                      <div className="absolute left-10 bottom-6 border-[#CDEA68] border-2 px-3 text-[#CDEA68] py-1 text-sm rounded-full">&copy;2022-2024</div>
                   </div>

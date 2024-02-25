@@ -4,16 +4,16 @@ import { FaArrowDown } from "react-icons/fa6";
 
 const LandingPage = () => {
   return (
-    <div data-scroll data-scroll-section data-scroll-speed="-.6" className="w-full h-screen bg-black pt-1">
-      <div className="makers mt-36 px-12 ">
-        <div className=" leading-[5.8vw]  ">
+    <div data-scroll data-scroll-section data-scroll-speed="-.6" className="w-full- h-screen bg-black pt-1">
+      <div className="makers mt-28 lg:px-12 px-6 lg:pb-2 pb-40">
+        <div className=" lg:leading-[5.8vw]  ">
           {["We Create", "Eye Opening", "Presentations"].map((elem, index) => (
             <div key={elem} className="flex">
               {index === 1 && <motion.div  initial={{width:0}} animate={{width:"7vw"}}
               transition={{ease:[0.76,0,0.24,1], duration:1}} className="w-28 rounded-md h-16 bg-red-400 mt-[1vw] "></motion.div>}
               <h1
                 key={elem}
-                className="flex text-[6.5vw] tracking-[-.4vw]  uppercase font-bold"
+                className="flex lg:text-[6.5vw] text-6xl tracking-[-.4vw]  uppercase font-bold"
               >
                 {elem}
               </h1>
@@ -21,7 +21,7 @@ const LandingPage = () => {
           ))}
         </div>
       </div>
-      <div className="bottom border-t-[1px] border-zinc-500 mt-28 flex justify-between items-center px-12">
+      <div className="bottom border-t-[1px]  border-zinc-500 lg:mt-28 mt-10 flex lg:flex-row flex-col justify-between lg:items-center items-start lg:px-12 px-6 ">
         {[
           "For Public and private companies",
           "From the first Pitch to IPO",

@@ -14,21 +14,18 @@ const Featured = () => {
 
   return (
     <div className="featured w-full pb-28 min-h-screen bg-black">
-      <div className="header px-12 py-8 border-b-[1px] border-zinc-400">
+      <div className="header lg:px-12 px-6 py-8 border-b-[1px] border-zinc-400">
         <h1 className="text-5xl"> Featured projects</h1>
       </div>
-      <div className="main px-12">
-        <div className="heading mt-16 mb-6 flex justify-between">
-          <div className="innerHead flex w-1/2 justify-start items-start gap-2">
+      <div className="main lg:px-12 px-6">
+        <div className="heading mt-16 mb-6 flex  justify-between">
+          <div className="innerHead flex  lg:w-1/2 w-full justify-start items-start gap-2">
             <div className="h-2 w-2 rounded-full bg-white mt-2"></div>
-            <h2 className="uppercase ">Fyde</h2>
+            <h2 className="uppercase lg:text-base text-[8vw]">Fyde</h2>
           </div>
-          <div className="innerHead flex w-1/2 justify-start items-start gap-2">
-            <div className="h-2 w-2 rounded-full bg-white mt-2"></div>
-            <h2 className="uppercase ">Vise</h2>
-          </div>
+          
         </div>
-        <div className="container flex gap-10 w-full ">
+        <div className="container flex lg:flex-row  flex-col gap-10 w-full ">
           <motion.div
             onHoverStart={() => hoverStart(0)}
             onHoverEnd={() => hoverEnd(0)}
@@ -47,7 +44,7 @@ const Featured = () => {
                 </motion.span>
               ))}
             </h1>
-            <div className="img bg-cover  rounded-lg overflow-hidden">
+            <div className="img bg-cover lg:w-full w-[200%]  rounded-lg overflow-hidden">
               <img
                 src="https://ochi.design/wp-content/uploads/2023/10/Fyde_Illustration_Crypto_2-663x551.png"
                 alt=""
@@ -73,6 +70,10 @@ const Featured = () => {
             onHoverEnd={() => hoverEnd(1)}
             className="inner w-1/2  rounded-lg relative  "
           >
+            <div className="innerHead flex w-full justify-start items-start gap-2">
+            <div className="h-2 w-2 rounded-full bg-white mt-2"></div>
+            <h2 className="uppercase lg:text-base text-[8vw] ">Vise</h2>
+          </div>
             <h1 className="absolute overflow-hidden  z-10 left-0 -translate-x-1/2 top-[30%] text-8xl font-bold flex text-[#CDEA68]">
               {"VISE".split("").map((item, index) => (
                 <motion.span
@@ -86,7 +87,7 @@ const Featured = () => {
                 </motion.span>
               ))}
             </h1>
-            <div className="img rounded-lg overflow-hidden">
+            <div className="img rounded-lg lg:w-full w-[200%] overflow-hidden">
               <img
                 src="https://ochi.design/wp-content/uploads/2022/09/Vise_front2-663x551.jpg"
                 alt=""
