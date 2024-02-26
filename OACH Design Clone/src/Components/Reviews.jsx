@@ -28,7 +28,7 @@ const Reviews = () => {
                 visible && index === indexs
                   ? "border-b-black"
                   : "border-b-[1px]"
-              }  px-10 py-4`}
+              }  px-5 lg:px-10 py-4`}
             >
               <div className="flex w-[35%] justify-between">
                 {" "}
@@ -37,7 +37,7 @@ const Reviews = () => {
                 </div>
                 {visible && (
                   <div
-                    className={`w-40 ${indexs === index ? "flex" : "hidden"}`}
+                    className={`w-40 ${indexs === index ? "lg:flex" : "hidden"} hidden`}
                   >
                     <h2>Services</h2>
                   </div>
@@ -61,10 +61,17 @@ const Reviews = () => {
               <div
                 className={`innerElem w-full ${
                   indexs === index
-                    ? "flex border-b-2 transition-[2s all ease-in-out]"
+                    ? "flex lg:flex-row flex-col border-b-2 transition-[2s all ease-in-out]"
                     : "hidden"
-                } px-10 py-6 min-h-[30vh]  mt-12 justify-center gap-80`}
+                } lg:px-10 px-5 py-6 lg:min-h-[30vh]  lg:mt-12 mt-4 justify-center gap-5 lg:gap-80`}
               >
+                {visible && (
+                  <div
+                    className={`w-40 ${indexs === index ? "flex" : "hidden"} lg:hidden`}
+                  >
+                    <h2>Services</h2>
+                  </div>
+                )}
                 <div className=" flex flex-col ">
                   {item.services.map((elem) => {
                     return (
@@ -74,7 +81,7 @@ const Reviews = () => {
                     );
                   })}
                 </div>
-                <div className="w-[30%]">
+                <div className="lg:w-[30%] w-[100%]">
                   <img
                     className="h-20 w-20 mb-5 rounded-lg"
                     src={item.img}

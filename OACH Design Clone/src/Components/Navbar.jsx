@@ -1,8 +1,31 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+import {  FaHamburger } from "react-icons/fa";
+import { ImCross } from "react-icons/im";
 
 const Navbar = () => {
+  const [visible, setVisible] = useState(false);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setVisible(false);
+      }
+    };
+
+    document.addEventListener('click', handleOutsideClick);
+
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  }, []);
+
+  const handleButtonClick = (event) => {
+    event.stopPropagation(); // Stop the event propagation to prevent it from reaching the document
+    setVisible(prev => !prev);
+  };
   return (
-    <div className=" fixed  backdrop-blur-sm z-50 w-full px-12 py-6 flex  justify-between items-center">
+    <div  className=" fixed  backdrop-blur-sm z-50 w-full px-12 py-6 flex  justify-between items-center">
       <div className="logo">
         <svg
           width="72"
@@ -33,10 +56,40 @@ const Navbar = () => {
           ></path>
         </svg>
       </div>
-      <div className=" hidden  gap-8 relative sm:hidden  parent lg:flex">
+      <div ref={menuRef} className="hamburger lg:hidden relative ">
+        <h2 className={`text-2xl absolute -top-3 z-[999] ${visible && "text-[#ff4265]"} `} onClick={handleButtonClick}>
+         {
+          visible ?  <ImCross />
+          :<FaHamburger />
+          
+         }
+        </h2>
+        {visible && (
+          <div className={`absolute rounded-b-3xl h-[65vh] flex flex-col  gap-6 text-black uppercase px-5 py-10 translate-x-[-50%] translate-y-[-50%] top-48 -left-20 pt-24 w-[70vw] transition-all duration-500 ${visible ? "opacity-100 bg-[#edb553]" : "opacity-0 pointer-events-none"}`}>
+            {["Service", "OurWork", "AboutUs", "Insights", "Contacts"].map(
+              (elem, index) => (
+                <a
+                  key={elem}
+                  name="name"
+                  className=" text-md  font-bold text-3xl"
+                >
+                  {elem}
+                </a>
+              )
+            )}
+          </div>
+        )}
+      </div>
+      <div className=" hidden  gap-8 relative   parent lg:flex">
         {["Service", "OurWork", "AboutUs", "Insights", "Contacts"].map(
           (elem, index) => (
-            <a key={elem} name="name" className={`links text-md  font-semibold ${index === 4 && "ml-12"}`}>
+            <a
+              key={elem}
+              name="name"
+              className={`links text-md  font-semibold ${
+                index === 4 && "ml-12"
+              }`}
+            >
               {elem}
             </a>
           )

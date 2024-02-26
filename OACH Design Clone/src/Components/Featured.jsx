@@ -52,13 +52,13 @@ const Featured = () => {
                 />
               </div>
             </motion.div>
-            <div className="capsule w-full flex lg:gap-10  text-white mt-6">
+            <div className="capsule w-full flex lg:gap-10 gap-2  text-white mt-6">
               {["audit", "copywriting", "sales dest", "slides design"].map(
                 (item, index) => {
                   return (
                     <h3
                       key={item}
-                      className="rounded-3xl uppercase border-[1px] py-1 text-gray-400 border-gray-400  text-sm  px-4 "
+                      className="rounded-3xl uppercase border-[1px] text-center text-gray-400 border-gray-400 text-[3vw] flex justify-center items-center  lg:text-sm  lg:px-4 px-2 "
                     >
                       {item}
                     </h3>

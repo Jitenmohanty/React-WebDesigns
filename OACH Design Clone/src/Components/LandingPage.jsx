@@ -10,10 +10,10 @@ const LandingPage = () => {
           {["We Create", "Eye Opening", "Presentations"].map((elem, index) => (
             <div key={elem} className="flex">
               {index === 1 && <motion.div  initial={{width:0}} animate={{width:"7vw"}}
-              transition={{ease:[0.76,0,0.24,1], duration:1}} className=" rounded-md lg:h-16 h-[11.5vw] bg-red-400 lg:mt-[1.4vw] mt-[2.4vw] "></motion.div>}
+              transition={{ease:[0.76,0,0.24,1], duration:1}} className=" rounded-md lg:h-16 h-[7vw] bg-red-400 lg:mt-[1.4vw] mt-[1.9vw] "></motion.div>}
               <h1
                 key={elem}
-                className="flex lg:text-[6.5vw] text-6xl tracking-[-.4vw]  uppercase font-bold"
+                className="flex lg:text-8xl text-4xl tracking-[-.4vw]  uppercase font-bold"
               >
                 {elem}
               </h1>

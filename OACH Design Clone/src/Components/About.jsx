@@ -11,7 +11,7 @@ const About = () => {
           <u>hire great peo­ple</u>.
         </h1>
       </div>
-      <div className="middle px-12 py-6 flex lg:flex-row flex-col w-full justify-around border-b-[0.5px] border-zinc-500 pb-16 gap-4 text-2xl">
+      <div className="middle lg:px-12 px-5 py-6 flex lg:flex-row flex-col w-full justify-around border-b-[0.5px] border-zinc-500 pb-16 gap-4 text-2xl">
         <h1 className="lg:w-[30%] w-full">What you can expect:</h1>
         <div className="middleMid flex lg:w-[22%] w-full gap-4 lg:gap-10 flex-col justify-start lg:text-base">
           <h1 className="">
@@ -37,7 +37,7 @@ const About = () => {
           )}
         </div>
       </div>
-      <div className="bottom px-12 py-6 flex flex-col gap-6 lg:flex-row justify-between  pb-16">
+      <div className="bottom lg:px-12 px-5 py-6 flex flex-col gap-6 lg:flex-row justify-between  pb-16">
         <div className="left">
           <h1 className="lg:text-[4vw] text-3xl tracking-[-0.2vw]">Our approach:</h1>
           <div className="btn pl-4 py-4 pr-1 mt-3 bg-black rounded-full text-white flex justify-around w-44 items-center">

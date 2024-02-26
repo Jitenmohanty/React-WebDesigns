@@ -4,7 +4,7 @@ import '../App.css'
 
 const Footer = () => {
   return (
-    <div className="w-full lg:min-h-screen px-10 lg:py-2 py-6 lg:pt-28  ">
+    <div className="w-full lg:min-h-screen px-4 lg:px-10 lg:py-2 py-6 lg:pt-28  ">
       <div className="top flex lg:flex-row flex-col justify-between">
         <h1 className="text-[7vw] leading-[6vw] font-bold  uppercase">
           Eye-
@@ -75,9 +75,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bottom flex justify-between items-center mt-8 ">
-        <h1 className="text-[3vw]">ochi</h1>
-        <h2 className="text-gray-400">© ochi design<h3 className="link"> 2024. Legal Terms</h3></h2>
+      <div className="bottom flex justify-between gap-4 items-center mt-8 ">
+        <h1 className="text-[5vw] lg:text-2xl">ochi</h1>
+        <h2 className="text-gray-400 w-1/2">© ochi design<h3 className="link"> 2024. Legal Terms</h3></h2>
         <h2 className="text-gray-400 link">
           Website by{" "}
           <a href="https://portfolio-react-me.vercel.app/" target="_blank">
