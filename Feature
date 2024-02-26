@@ -17,19 +17,19 @@ const Featured = () => {
       <div className="header lg:px-12 px-6 py-8 border-b-[1px] border-zinc-400">
         <h1 className="text-5xl"> Featured projects</h1>
       </div>
-      <div className="main lg:px-12 px-6 mt-14 w-full">
-        <div className="container flex lg:flex-row flex-col gap-10 w-full ">
-          <div className="first w-[100%]">
-            <div className="innerHead flex w-full justify-start items-center mb-6 lg:items-start gap-2">
+      <div className="main lg:px-12 px-6 mt-14">
+        <div className="container flex lg:flex-row flex-col gap-10">
+          <div className="first">
+            <div className="innerHead flex w-full mb-6 lg:items-start justify-start items-center gap-2">
               <div className="h-2 w-2 rounded-full bg-white mt-2"></div>
               <h2 className="uppercase lg:text-base text-[8vw]">Fyde</h2>
             </div>
             <motion.div
               onHoverStart={() => hoverStart(0)}
               onHoverEnd={() => hoverEnd(0)}
-              className="inner  rounded-lg relative "
+              className="inner rounded-lg relative"
             >
-              <h1 className="absolute overflow-hidden z-10 left-full -translate-x-1/2 top-[30%] text-8xl font-bold text-[#CDEA68] lg:flex hidden">
+              <h1 className="absolute overflow-hidden z-10 left-full -translate-x-1/2 top-[30%] text-8xl font-bold flex text-[#CDEA68]">
                 {"FYDE".split("").map((item, index) => (
                   <motion.span
                     initial={{ y: "100%" }}
@@ -45,14 +45,14 @@ const Featured = () => {
                   </motion.span>
                 ))}
               </h1>
-              <div className="img  rounded-lg overflow-hidden">
+              <div className="img bg-cover  rounded-lg overflow-hidden">
                 <img
                   src="https://ochi.design/wp-content/uploads/2023/10/Fyde_Illustration_Crypto_2-663x551.png"
                   alt=""
                 />
               </div>
             </motion.div>
-            <div className="capsule w-full flex lg:gap-10  text-white mt-6">
+            <div className="capsule w-full flex lg:gap-10 gap-3  text-white mt-6">
               {["audit", "copywriting", "sales dest", "slides design"].map(
                 (item, index) => {
                   return (
@@ -67,8 +67,8 @@ const Featured = () => {
               )}
             </div>
           </div>
-          <div className="second w-full">
-            <div className="innerHead flex w-full justify-start items-center mb-6 lg:items-start gap-2">
+          <div className="second">
+            <div className="innerHead flex w-full justify-start mb-6 lg:items-start items-center gap-2">
               <div className="h-2 w-2 rounded-full bg-white mt-2"></div>
               <h2 className="uppercase lg:text-base text-[8vw] ">Vise</h2>
             </div>
