@@ -96,7 +96,7 @@ const Reviews = () => {
       </div>
 
         <div   className="cards px-10 py-20 flex lg:flex-row flex-col gap-5">
-            <div className="lg:w-1/2 w-full  bg-[#004D43] h-96 rounded-lg flex justify-center items-center relative">
+            <div className="lg:w-1/2 w-full  bg-[#004D43] h-72 lg:h-96 rounded-lg flex justify-center items-center relative">
                   <h1 className="text-7xl text-[#CDEA68]">ochi</h1>
                   <div className="absolute left-10 bottom-6 border-[#CDEA68] border-2 px-3 text-[#CDEA68] py-1 text-sm rounded-full">&copy;2022-2024</div>
             </div>

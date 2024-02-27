@@ -5,7 +5,7 @@ import '../App.css'
 const Footer = () => {
   return (
     <div className="w-full lg:min-h-screen px-4 lg:px-10 lg:py-2 py-6 lg:pt-28  ">
-      <div className="top flex lg:flex-row flex-col justify-between">
+      <div className="top flex lg:flex-row gap-4 flex-col justify-between">
         <h1 className="text-[7vw] leading-[6vw] font-bold  uppercase">
           Eye-
           <br /> Opening
@@ -15,7 +15,7 @@ const Footer = () => {
             Presentations
           </h1>
           <div className="inner flex flex-col w-full">
-            <div className="bottom mt-16 ml-2 flex flex-col  ">
+            <div className="bottom lg:mt-16 mt-10 ml-2 flex flex-col  ">
               {[ "Instagram", "Behance", "Facebook", "Linkedin"].map(
                 (item, index) => (
                   <h1

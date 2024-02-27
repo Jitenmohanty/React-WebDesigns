@@ -45,15 +45,15 @@ const SecondEye = () => {
         </h1>
         
       </div>
-      <div className="inner flex justify-center items-center px-4 py-4 text-white rounded-full gap-8 uppercase text-xl lg:text-[1vw] bg-black ">
+      <div className="inner flex justify-center items-center px-4 py-4 text-white rounded-full gap-8 uppercase text-md lg:text-[1vw] bg-black ">
           <h1 className="">view all case studies</h1>
           <h1 className="rotate-[-140deg]">
             {" "}
             <FaArrowDown />
           </h1>
         </div>
-        <h1>OR</h1>
-      <div className="inner flex justify-center items-center px-4 py-4 text-white rounded-full gap-8 uppercase text-xl lg:text-[1vw] bg-black ">
+        <h1 className="font-bold">OR</h1>
+      <div className="inner flex justify-center items-center px-4 py-4 text-white rounded-full gap-8 uppercase text-md lg:text-[1vw] bg-black ">
           <h1 className="">view all case studies</h1>
           <h1 className="rotate-[-140deg]">
             {" "}
