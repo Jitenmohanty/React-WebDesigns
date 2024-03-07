@@ -72,6 +72,8 @@ const AdminSidebar = () => {
                 top: 0,
                 left: showModal ? "0" : "-20rem",
                 transition: "all 0.5s",
+                borderRight:"1.5px solid #597278",
+                boxShadow: `0px 0px red, ${showModal ? "3rem":"0"} 0 ${showModal ? "8em":"0"} gray`
               }
             : {}
         }

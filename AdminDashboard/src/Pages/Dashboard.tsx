@@ -1,16 +1,14 @@
 import { BsSearch } from "react-icons/bs";
 import AdminSidebar from "../Components/AdminSidebar";
-import { FaRegBell, FaRegMoon, FaRegSun } from "react-icons/fa";
+import { FaRegBell } from "react-icons/fa";
 import userimg from "../assets/userpic.png";
 import { HiTrendingDown, HiTrendingUp } from "react-icons/hi";
 import data from "../assets/data.json";
 import { BarChart, DoughnutChart } from "../Components/Chart";
 import { BiMaleFemale } from "react-icons/bi";
 import Table from "../Components/DashboardTable";
-import { useState } from "react";
 
 const Dashboard = () => {
-  const [icon, setIcon] = useState(false);
 
   return (
     <div className="adminContainer">
@@ -20,9 +18,7 @@ const Dashboard = () => {
           <BsSearch />
           <input type="text" placeholder="Search for data,users, docs" />
           <FaRegBell />
-          <h3 onClick={() => setIcon((prev) => !prev)}>
-            {icon ? <FaRegSun /> : <FaRegMoon />}
-          </h3>
+         
           <img src={userimg} alt="user" />
         </div>
         <section className="widgit-container">
