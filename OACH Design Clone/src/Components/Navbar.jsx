@@ -21,7 +21,7 @@ const Navbar = () => {
   }, []);
 
   const handleButtonClick = (event) => {
-    event.stopPropagation(); // Stop the event propagation to prevent it from reaching the document
+    event.stopPropagation(); //Stop the event propagation to prevent it from reaching the document
     setVisible(prev => !prev);
   };
   return (
