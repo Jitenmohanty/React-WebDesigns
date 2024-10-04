@@ -1,0 +1,34 @@
+
+
+/* Add this to your main CSS file */
+.text-stroke {
+  font-size: 24vw;
+  -webkit-text-stroke: .2px #fff; /* Defines the stroke width and color */
+  color: transparent; /* Makes the inner text transparent so the stroke is visible */
+}
+
+
+@keyframes neon-border {
+  0% {
+    text-shadow: 0 0 10px rgba(35, 72, 172, 0.7),
+                 0 0 20px rgba(35, 72, 172, 0.7),
+                 0 0 30px rgba(35, 72, 172, 0.7),
+                 0 0 40px rgba(35, 72, 172, 0.7);
+  }
+  50% {
+    text-shadow: 0 0 20px rgb(235, 242, 37),
+                 0 0 30px rgb(243, 249, 69),
+                 0 0 40px rgb(230, 215, 11),
+                 0 0 50px rgb(229, 236, 20);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(35, 72, 172, 0.7),
+                 0 0 20px rgba(35, 72, 172, 0.7),
+                 0 0 30px rgba(35, 72, 172, 0.7),
+                 0 0 40px rgba(35, 72, 172, 0.7);
+  }
+}
+
+.neon-effect {
+  animation: neon-border 2s infinite alternate; /* The neon light animation */
+}

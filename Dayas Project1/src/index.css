@@ -1,0 +1,16 @@
+@tailwind base;
+
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Glitten';
+  src: url('/src/assets/fonts/Glitten.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Example usage in global CSS */
+body {
+  font-family: 'Roboto', sans-serif;
+}
