@@ -1,23 +1,63 @@
-import React from 'react'
-import Notification from './Components/Notification'
+import "./App.css";
+import useNotification from "./Hooks/use-Notification";
 
-
-const App = () => {
-
-  const handleClose = () => {
-    const closeDivs = document.getElementsByClassName("close");
-    for (let i = 0; i < closeDivs.length; i++) {
-        closeDivs[i].style.display = "none";
-    }
-    console.log(closeDivs);
-};
+function App() {
+  const {NotificationComponent, triggerNotification} =
+    useNotification("top");
 
   return (
-    <div>
-       <h1> Welcome to Jitu Developement enviorment</h1>
-       <div className='close'> <Notification type='warning' message="It's success" onClose={handleClose}/></div>
+    <div className="main">
+      {NotificationComponent}
+      <h1>Toast Component</h1>
+      <div className="NotificationBox">
+        <button
+          onClick={() =>
+            triggerNotification({
+              type: "success",
+              message: "This is a success message!",
+              duration: 5000,
+              // animation: "pop",
+            })
+          }
+        >
+          Show Success
+        </button>
+        <button
+          onClick={() =>
+            triggerNotification({
+              type: "info",
+              message: "This is an info message!",
+              duration: 5000,
+            })
+          }
+        >
+          Show Info
+        </button>
+        <button
+          onClick={() =>
+            triggerNotification({
+              type: "warning",
+              message: "This is a warning message!",
+              duration: 5000,
+            })
+          }
+        >
+          Show Warning
+        </button>
+        <button
+          onClick={() =>
+            triggerNotification({
+              type: "error",
+              message: "This is an error message!",
+              duration: 5000,
+            })
+          }
+        >
+          Show Error
+        </button>
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

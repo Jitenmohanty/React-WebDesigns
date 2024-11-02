@@ -1,42 +1,99 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4vw;
+  padding: 2vw;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.NotificationBox {
+  border: 2px solid #333;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  max-width: 400px; /* Responsive max-width */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.NotificationBox button {
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1vw;
+  font-weight: bold;
+  color: white;
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
-.card {
-  padding: 2em;
+/* Button Colors */
+.NotificationBox button:nth-child(1) {
+  background-color: #28a745; /* Success green */
 }
 
-.read-the-docs {
-  color: #888;
+.NotificationBox button:nth-child(2) {
+  background-color: #17a2b8; /* Info blue */
+}
+
+.NotificationBox button:nth-child(3) {
+  background-color: #ffc107; /* Warning yellow */
+  color: #333;
+}
+
+.NotificationBox button:nth-child(4) {
+  background-color: #dc3545; /* Error red */
+}
+
+/* Button Hover and Focus Effects */
+.NotificationBox button:hover,
+.NotificationBox button:focus {
+  transform: scale(1.05); /* Slightly enlarge */
+  opacity: 0.9;
+}
+
+.NotificationBox button:active {
+  transform: scale(0.98); /* Pressed effect */
+}
+
+/* Common transition styles for fade-in and slide-up effect */
+.fixed-element {
+  position: fixed;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fixed-element.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Specific positioning */
+.top {
+  top: 20px;
+}
+
+.top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.top-left {
+  top: 20px;
+  left: 20px;
+}
+
+.bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+
+.bottom-left {
+  bottom: 20px;
+  left: 20px;
 }
