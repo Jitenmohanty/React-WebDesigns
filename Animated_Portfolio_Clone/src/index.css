@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: wolf1;
+  src: url(./assets/file.woff2);
+}
+@font-face {
+  font-family: wolf2;
+  src: url(./assets/file\ \(1\).woff2);
+}
+@font-face {
+  font-family: wolf3;
+  src: url(./assets/file\ \(2\).woff2);
+}
+@font-face {
+  font-family: wolf4;
+  src: url(./assets/file\ \(3\).woff2);
+}
+@font-face {
+  font-family: wolf5;
+  src: url(./assets/file\ \(4\).woff2);
+}
+@font-face {
+  font-family: wolf6;
+  src: url(./assets/madefor-text.var.original.woff2);
+}
