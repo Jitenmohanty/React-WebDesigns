@@ -1,11 +1,14 @@
 .main {
+  height: 88vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 4vw;
   padding: 2vw;
+  position: relative;
 }
+
 
 .NotificationBox {
   border: 2px solid #333;
@@ -59,22 +62,12 @@
 .NotificationBox button:active {
   transform: scale(0.98); /* Pressed effect */
 }
-
-/* Common transition styles for fade-in and slide-up effect */
-.fixed-element {
-  position: fixed;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+.Noti{
+  position: absolute;
 }
-
-.fixed-element.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Specific positioning */
 .top {
+  left: 50%;
+  transform: translateX(-50%);
   top: 20px;
 }
 
@@ -96,4 +89,9 @@
 .bottom-left {
   bottom: 20px;
   left: 20px;
+}
+.bottom{
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }

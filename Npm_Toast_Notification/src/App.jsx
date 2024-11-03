@@ -2,12 +2,11 @@ import "./App.css";
 import useNotification from "./Hooks/use-Notification";
 
 function App() {
-  const {NotificationComponent, triggerNotification} =
-    useNotification("top");
+  const { NotificationComponent, triggerNotification } = useNotification("top");
 
   return (
     <div className="main">
-      {NotificationComponent}
+      <div className=".notification-container">{NotificationComponent}</div>
       <h1>Toast Component</h1>
       <div className="NotificationBox">
         <button
@@ -16,7 +15,6 @@ function App() {
               type: "success",
               message: "This is a success message!",
               duration: 5000,
-              // animation: "pop",
             })
           }
         >

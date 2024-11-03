@@ -30,12 +30,12 @@
     height: 2vw;
     border-radius: 10px;
     box-shadow: 0 0 10px 5px rgb(205, 198, 198);
-    animation: slideIn 0.5s ease forwards; /* Slide-in animation */
+    animation: slideIn 0.5s ease forwards; 
 }
 
 /* Additional styles for notification types */
 .info {
-    background-color: rgb(255, 230, 0);
+    background-color: rgb(45, 190, 234);
     color: white;
 }
 
