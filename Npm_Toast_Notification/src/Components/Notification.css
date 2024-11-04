@@ -1,7 +1,40 @@
-@keyframes slideIn {
+@keyframes slideInLeft {
     from {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateX(-20px); /* Slide in from the left */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px); /* Slide in from the right */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Slide in from the top */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Slide in from the bottom */
     }
     to {
         opacity: 1;
@@ -12,11 +45,11 @@
 @keyframes slideOut {
     from {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0); /* Original position */
     }
     to {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateX(-20px); /* Slide out to the left */
     }
 }
 
@@ -30,8 +63,29 @@
     height: 2vw;
     border-radius: 10px;
     box-shadow: 0 0 10px 5px rgb(205, 198, 198);
-    animation: slideIn 0.5s ease forwards; 
 }
+
+.Notification.left {
+    animation: slideInLeft 0.5s ease forwards;
+}
+
+.Notification.right {
+    animation: slideInRight 0.5s ease forwards;
+}
+
+.Notification.top {
+    animation: slideInTop 0.5s ease forwards;
+}
+
+.Notification.bottom {
+    animation: slideInBottom 0.5s ease forwards;
+}
+
+/* Exit animation */
+.Notification.exit {
+    animation: slideOut 0.5s ease forwards;
+}
+
 
 /* Additional styles for notification types */
 .info {
@@ -63,7 +117,4 @@
     opacity: 0.8;
 }
 
-/* Slide-out effect class */
-.Notification.slide-out {
-    animation: slideOut 0.5s ease forwards;
-}
+

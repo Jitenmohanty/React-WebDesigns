@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 4vw;
+  gap: 1vw;
   padding: 2vw;
   position: relative;
 }
@@ -63,7 +63,10 @@
   transform: scale(0.98); /* Pressed effect */
 }
 .Noti{
+  display: flex;
+  flex-direction: column;
   position: absolute;
+  gap: 1vw;
 }
 .top {
   left: 50%;
@@ -78,6 +81,10 @@
 
 .top-left {
   top: 20px;
+  left: 20px;
+}
+.top-left .left{
+  /* top: 20px; */
   left: 20px;
 }
 

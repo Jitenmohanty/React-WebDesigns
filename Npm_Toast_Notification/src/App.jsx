@@ -2,11 +2,14 @@ import "./App.css";
 import useNotification from "./Hooks/use-Notification";
 
 function App() {
-  const { NotificationComponent, triggerNotification } = useNotification("top");
+  const { NotificationComponent, triggerNotification } = useNotification(
+    "bottom-left",
+    "top"
+  );
 
   return (
     <div className="main">
-      <div className=".notification-container">{NotificationComponent}</div>
+      {NotificationComponent}
       <h1>Toast Component</h1>
       <div className="NotificationBox">
         <button
@@ -14,9 +17,9 @@ function App() {
             triggerNotification({
               type: "success",
               message: "This is a success message!",
-              duration: 5000,
+              duration: 3000,
             })
-          }
+          } 
         >
           Show Success
         </button>
@@ -25,7 +28,7 @@ function App() {
             triggerNotification({
               type: "info",
               message: "This is an info message!",
-              duration: 5000,
+              duration: 3000,
             })
           }
         >
@@ -36,7 +39,7 @@ function App() {
             triggerNotification({
               type: "warning",
               message: "This is a warning message!",
-              duration: 5000,
+              duration: 3000,
             })
           }
         >
@@ -47,7 +50,7 @@ function App() {
             triggerNotification({
               type: "error",
               message: "This is an error message!",
-              duration: 5000,
+              duration: 3000,
             })
           }
         >
