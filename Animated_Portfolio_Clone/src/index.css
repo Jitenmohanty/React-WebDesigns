@@ -26,3 +26,8 @@
   font-family: wolf6;
   src: url(./assets/madefor-text.var.original.woff2);
 }
+
+#page1-in{
+  position: relative;
+  perspective: 2000px;
+}
