@@ -2,7 +2,7 @@ import React from "react";
 import "remixicon/fonts/remixicon.css";
 const Header = () => {
   return (
-    <div className="absolute w-full z-10 px-10 py-16 flex items-center justify-end">
+    <div className="absolute  w-full z-10 px-10 py-16 flex items-center justify-end">
       <button className=" rounded-full border-[.30rem]  border-white text-white px-11 py-[0.55rem] bg-black hover:bg-gray-400">
         Hire Me
       </button>
