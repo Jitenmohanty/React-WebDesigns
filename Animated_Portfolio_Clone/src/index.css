@@ -8,19 +8,19 @@
 }
 @font-face {
   font-family: wolf2;
-  src: url(./assets/file\ \(1\).woff2);
+  src: url(./assets/file1.woff2);
 }
 @font-face {
   font-family: wolf3;
-  src: url(./assets/file\ \(2\).woff2);
+  src: url(./assets/file2.woff2);
 }
 @font-face {
   font-family: wolf4;
-  src: url(./assets/file\ \(3\).woff2);
+  src: url(./assets/file3.woff2);
 }
 @font-face {
   font-family: wolf5;
-  src: url(./assets/file\ \(4\).woff2);
+  src: url(./assets/file4.woff2);
 }
 @font-face {
   font-family: wolf6;
@@ -30,4 +30,8 @@
 #page1-in{
   position: relative;
   perspective: 2000px;
+}
+#Page2Div{
+  position: relative;
+  perspective: 4500px;
 }

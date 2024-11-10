@@ -5,7 +5,7 @@ const TilledText = (props) => {
 
 
   return (
-    <div ref={props.abc} id="tiltDiv" className="mt-28 px-10 ml-6">
+    <div ref={props.abc} id=" " className="mt-28 px-10 ml-6 w-fit">
       <h1 className="text-[4.2vw] font-[wolf1] uppercase leading-[4.5vw] text-white">
         {" "}
         I AM <span className="text-black">DARK MODE</span>™
