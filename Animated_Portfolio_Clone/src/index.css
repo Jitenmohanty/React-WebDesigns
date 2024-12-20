@@ -33,5 +33,9 @@
 }
 #Page2Div{
   position: relative;
-  perspective: 4500px;
+  perspective: 3000px;
+}
+#page5Div{
+  position: relative;
+  perspective: 3000px;
 }

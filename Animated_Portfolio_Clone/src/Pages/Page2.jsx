@@ -30,22 +30,22 @@ const Page2 = () => {
       <h3 className="text-xl text-gray-500 font-[wolf6]">
         © anzo.studio 2024 | designed and developed
       </h3>
-      <div className="rotateText">
+      <div className="rotateText w-[98%] ">
         <h1 className="text-[34vw] font-[wolf4] leading-[30vw]">IMPACTFUL</h1>
       </div>
-      <div className="rotateText">
+      <div className="rotateText w-[98%]">
         <h1 className="text-[34vw] font-[wolf4] leading-[30vw]">DESIGN</h1>
       </div>
-      <div className="rotateText">
+      <div className="rotateText w-[98%]">
         <h1 className="text-[34vw] font-[wolf4] leading-[30vw]">IS THE</h1>
       </div>
-      <div className="rotateText">
+      <div className="rotateText w-[98%]">
         <h1 className="text-[34vw] font-[wolf4] leading-[30vw]">DESIGN</h1>
       </div>
-      <div className="rotateText">
+      <div className="rotateText w-[98%]">
         <h1 className="text-[34vw] font-[wolf4] leading-[30vw]">THAT</h1>
       </div>
-      <div className="rotateText">
+      <div className="rotateText w-[98%]">
         <h1 className="text-[34vw] font-[wolf4] leading-[30vw]">WORKS</h1>
       </div>
       <div className="flex justify-center items-center scale-50">
